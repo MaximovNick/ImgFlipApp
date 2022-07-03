@@ -13,6 +13,8 @@
 		AD60366D2871A87800E2FD2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD60366B2871A87800E2FD2D /* Main.storyboard */; };
 		AD60366F2871A87900E2FD2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD60366E2871A87900E2FD2D /* Assets.xcassets */; };
 		AD6036722871A87900E2FD2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6036702871A87900E2FD2D /* LaunchScreen.storyboard */; };
+		AD933EDC28722496009F4EE6 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD933EDB28722496009F4EE6 /* Meme.swift */; };
+		AD933EDE287224F9009F4EE6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD933EDD287224F9009F4EE6 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AD60366E2871A87900E2FD2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD6036712871A87900E2FD2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD6036732871A87900E2FD2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD933EDB28722496009F4EE6 /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
+		AD933EDD287224F9009F4EE6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,65 @@
 		AD6036642871A87800E2FD2D /* ImgFlipApp */ = {
 			isa = PBXGroup;
 			children = (
-				AD6036652871A87800E2FD2D /* AppDelegate.swift */,
-				AD6036672871A87800E2FD2D /* SceneDelegate.swift */,
-				AD6036692871A87800E2FD2D /* ViewController.swift */,
-				AD60366B2871A87800E2FD2D /* Main.storyboard */,
-				AD60366E2871A87900E2FD2D /* Assets.xcassets */,
-				AD6036702871A87900E2FD2D /* LaunchScreen.storyboard */,
-				AD6036732871A87900E2FD2D /* Info.plist */,
+				AD60367E2871A96E00E2FD2D /* Models */,
+				AD60367D2871A96300E2FD2D /* Services */,
+				AD60367A2871A89300E2FD2D /* ViewControllers */,
+				AD60367B2871A8A400E2FD2D /* Storyboards */,
+				AD60367C2871A8DC00E2FD2D /* Resources */,
+				AD6036792871A88C00E2FD2D /* App */,
 			);
 			path = ImgFlipApp;
+			sourceTree = "<group>";
+		};
+		AD6036792871A88C00E2FD2D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AD6036652871A87800E2FD2D /* AppDelegate.swift */,
+				AD6036672871A87800E2FD2D /* SceneDelegate.swift */,
+				AD6036732871A87900E2FD2D /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AD60367A2871A89300E2FD2D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD6036692871A87800E2FD2D /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AD60367B2871A8A400E2FD2D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AD60366B2871A87800E2FD2D /* Main.storyboard */,
+				AD6036702871A87900E2FD2D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AD60367C2871A8DC00E2FD2D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD60366E2871A87900E2FD2D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AD60367D2871A96300E2FD2D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AD933EDD287224F9009F4EE6 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AD60367E2871A96E00E2FD2D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD933EDB28722496009F4EE6 /* Meme.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +193,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD60366A2871A87800E2FD2D /* ViewController.swift in Sources */,
+				AD933EDC28722496009F4EE6 /* Meme.swift in Sources */,
+				AD933EDE287224F9009F4EE6 /* NetworkManager.swift in Sources */,
 				AD6036662871A87800E2FD2D /* AppDelegate.swift in Sources */,
 				AD6036682871A87800E2FD2D /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +344,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ImgFlipApp/Info.plist;
+				INFOPLIST_FILE = ImgFlipApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -303,7 +359,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +371,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ImgFlipApp/Info.plist;
+				INFOPLIST_FILE = ImgFlipApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,7 +386,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
